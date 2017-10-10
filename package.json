@@ -1,0 +1,19 @@
+{
+  "name": "cryptography-algorithms",
+  "version": "1.0.0",
+  "description": "This is a repository meant to hold some simple implementations of cryptography methods.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unarekin/cryptography-algorithms.git"
+  },
+  "author": "Samuel Phelps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Unarekin/cryptography-algorithms/issues"
+  },
+  "homepage": "https://github.com/Unarekin/cryptography-algorithms#readme"
+}
