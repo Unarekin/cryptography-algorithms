@@ -7,6 +7,8 @@ This is a repository meant to hold some simple implementations of cryptography m
 A Caesar cipher (or shift cipher) is a simple substitution cipher, replacing every character of the open text with a character a fixed distance down the alphabet.  This implementation preserves capitalization, and will not cipher non-alphanumeric characters.
 https://en.wikipedia.org/wiki/Caesar_cipher
 ## Vernam Cipher
+A fairly simple encryption method that generates a random 'key' used to encrypt a bit of text.  The key is the same length as the text itself, and each character of the text is XORed against its corresponding number in the key.
+https://en.wikipedia.org/wiki/Gilbert_Vernam#The_Vernam_cipher
 ## Affine Cipher
 ## ROT13
 ## Vigenère cipher
