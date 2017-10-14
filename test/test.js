@@ -2,6 +2,7 @@
 var assert = require('assert');
 var caesar = require('../caesar-cipher');
 var vernam = require('../vernam-cipher');
+var rot13 = require('../rot-13');
 
 
 
@@ -32,3 +33,18 @@ describe('Vernam cipher', function() {
 		assert.equal(decrypted, "test string");
 	});
 });
+
+describe("ROT13", function() {
+	it("Encrypts 'TEST' as 'GRFG'", function() {
+		assert.equal(rot13("TEST"), "GRFG");
+	});
+	it("Decrypts 'GRFG' to 'TEST'", function() {
+		assert.equal(rot13("GRFG"), "TEST");
+	});
+
+	it("Throws an exception when given invalid input", function() {
+		assert.throws(function() {
+			return rot13("Test string");
+		});
+	});
+})

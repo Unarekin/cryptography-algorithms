@@ -10,7 +10,10 @@ https://en.wikipedia.org/wiki/Caesar_cipher
 A fairly simple encryption method that generates a random 'key' used to encrypt a bit of text.  The key is the same length as the text itself, and each character of the text is XORed against its corresponding number in the key.
 https://en.wikipedia.org/wiki/Gilbert_Vernam#The_Vernam_cipher
 ## Affine Cipher
+https://en.wikipedia.org/wiki/Affine_cipher
 ## ROT13
+A simple substitution cipher.  Replaces a letter with the letter 13 places after it in the alphabet, wrapping around after 'z'.  Only supports alphabetical text.  Decrypting involves re-encrypting the encrypted text.
+https://en.wikipedia.org/wiki/ROT13
 ## Vigenère cipher
 ## Diffie-Hellman
 

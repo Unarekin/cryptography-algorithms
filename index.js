@@ -1,10 +1,11 @@
 'use strict'
 var caesar = require('./caesar-cipher');
 var vernam = require('./vernam-cipher');
+var rot13 = require('./rot-13');
 
 
 
-var sampleText = "This is a test string.";
+var sampleText = "TESTING";
 var encrypted = "";
 
 console.log("Beginning encryption samples.");
@@ -21,3 +22,9 @@ encrypted = vernam.encrypt(sampleText, key);
 console.log("   Key: ", key);
 console.log("   Encrypted: ", encrypted);
 console.log("   Decrypted: ", vernam.decrypt(encrypted, key));
+
+
+console.log("ROT13");
+encrypted = rot13(sampleText);
+console.log("   Encrypted: ", encrypted);
+console.log("   Decrypted: ", rot13(encrypted));
